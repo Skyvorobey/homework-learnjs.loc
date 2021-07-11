@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../../../css/style.css">
+    <title>Условное ветвление: if, '?'</title>
+</head>
+<body>
+    <h1>
+        Задачи:
+    </h1>
+    <div class="task1">
+        <h2>
+            if (строка с нулём)
+        </h2>
+        <p>
+            Выведется ли alert?<br>
+            <br>
+            if ("0") {<br>
+                alert( 'Привет' );<br>
+              }
+        </p>
+    </div>
+    <div class="task2">
+        <h2>
+            Название JavaScript
+        </h2>
+        <p>
+            Используя конструкцию if..else, напишите код, который будет спрашивать: „Какое «официальное» название JavaScript?“<br>
+            <br>
+            Если пользователь вводит «ECMAScript», то показать: «Верно!», в противном случае – отобразить: «Не знаете? ECMAScript!»
+        </p>
+    </div>
+    <div class="task3">
+        <h2>
+            Покажите знак числа
+        </h2>
+        <p>
+            Используя конструкцию if..else, напишите код, который получает число через prompt, а затем выводит в alert:<br>
+            <br>
+            1, если значение больше нуля,<br>
+            -1, если значение меньше нуля,<br>
+            0, если значение равно нулю.<br>
+
+            Предполагается, что пользователь вводит только числа.
+        </p>
+    </div>
+    <div class="task4">
+        <h2>
+            Перепишите 'if' в '?'
+        </h2>
+        <p>
+            Перепишите конструкцию if с использованием условного оператора '?':<br>
+            <br>
+            let result;<br>
+
+            if (a + b < 4) {<br>
+            result = 'Мало';<br>
+            } else {<br>
+            result = 'Много';<br>
+            }
+        </p>
+    </div>
+    <div class="task5">
+        <h2>
+            Перепишите 'if..else' в '?'
+        </h2>
+        <p>
+            Перепишите if..else с использованием нескольких операторов '?'.<br>
+
+            let message;<br>
+            <br>
+            if (login == 'Сотрудник') {<br>
+            message = 'Привет';<br>
+            } else if (login == 'Директор') {<br>
+            message = 'Здравствуйте';<br>
+            } else if (login == '') {<br>
+            message = 'Нет логина';<br>
+            } else {<br>
+            message = '';<br>
+            }
+        </p>
+    </div>
+    
+    <script src="./js.js"></script>
+</body>
+</html>
