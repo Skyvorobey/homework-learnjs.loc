@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../../../css/style.css">
+    <title>Конструкция "switch"</title>
+</head>
+<body>
+    <h1>
+        Задачи:
+    </h1>
+    <div class="task1">
+        <h2>
+            Напишите "if", аналогичный "switch"
+        </h2>
+        <p>
+            switch (browser) { <br>
+                case 'Edge':<br>
+                  alert( "You've got the Edge!" );<br>
+                  break;<br>
+                  <br>
+                case 'Chrome':<br>
+                case 'Firefox':<br>
+                case 'Safari':<br>
+                case 'Opera':<br>
+                  alert( 'Okay we support these browsers too' );<br>
+                  break;<br>
+                  <br>
+                default:<br>
+                  alert( 'We hope that this page looks ok!' );<br>
+              }
+        </p>
+    </div>
+    <div class="task2">
+        <h2>
+            Переписать условия "if" на "switch"
+        </h2>
+        <p>
+            const number = +prompt('Введите число между 0 и 3', '');<br>
+            <br>
+            if (number === 0) {<br>
+            alert('Вы ввели число 0');<br>
+            }<br>
+            <br>
+            if (number === 1) {<br>
+            alert('Вы ввели число 1');<br>
+            }<br>
+            <br>
+            if (number === 2 || number === 3) {<br>
+            alert('Вы ввели число 2, а может и 3');<br>
+            }
+        </p>
+    </div>
+    <script src="./js.js"></script>
+</body>
+</html>
