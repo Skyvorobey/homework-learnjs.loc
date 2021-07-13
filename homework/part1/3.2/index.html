@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../../../css/style.css">
+    <title>Советы по стилю кода</title>
+</head>
+<body>
+    <h1>
+        Задачи:
+    </h1>
+    <div class="task1">
+        <h2>
+            Какие недостатки вы видите в стиле написания кода этого примера?
+        </h2>
+        <p>
+            function pow(x,n)<br>
+            {<br>
+            let result=1;<br>
+            for(let i=0;i<n;i++) {result*=x;}<br>
+            return result;<br>
+            }<br>
+            <br>
+            let x=prompt("x?",''), n=prompt("n?",'')<br>
+            if (n<=0)<br>
+            {<br>
+            alert(`Степень ${n} не поддерживается, введите целую степень, большую 0`);<br>
+            }<br>
+            else<br>
+            {<br>
+            alert(pow(x,n))<br>
+            }
+        </p>
+    </div>
+    
+    <script src="./js.js"></script>
+</body>
+</html>
