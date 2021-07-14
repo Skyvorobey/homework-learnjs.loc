@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../../../css/style.css">
+    <title>Методы объекта, "this"</title>
+</head>
+<body>
+    <h1>
+        Задачи:
+    </h1>
+    <div class="task1">
+        <h2>
+            Создайте калькулятор
+        </h2>
+        <p>
+            Создайте объект calculator (калькулятор) с тремя методами:<br>
+            <br>
+            read() (читать) запрашивает два значения и сохраняет их как свойства объекта.<br>
+            sum() (суммировать) возвращает сумму сохранённых значений.<br>
+            mul() (умножить) перемножает сохранённые значения и возвращает результат.<br>
+
+        </p>
+    </div>
+    <div class="task2">
+        <h2>
+            Цепь вызовов
+        </h2>
+        <p>
+            Измените код методов up, down и showStep таким образом, чтобы их вызов можно было сделать по цепочке:<br>
+            let ladder = {<br>
+                step: 0,<br>
+                up() {<br>
+                  this.step++;<br>
+                },<br>
+                down() {<br>
+                  this.step--;<br>
+                },<br>
+                showStep: function() { // показывает текущую ступеньку<br>
+                  alert( this.step );<br>
+                }<br>
+              };
+        </p>
+    </div>
+         
+    <script src="./js.js"></script>
+</body>
+</html>
